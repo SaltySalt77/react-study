@@ -1,6 +1,4 @@
 import Food from "./Food";
-import Image from "next/image";
-import foodImg from "/public/food0.png";
 
 const List = () => {
   let items = ["Tomatoes", "Pasta", "Coconut"];
