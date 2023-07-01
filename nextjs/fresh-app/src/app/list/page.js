@@ -1,4 +1,4 @@
-import Food from "./Food";
+import Food from "/src/app/list/Food";
 
 const List = () => {
   let items = ["Tomatoes", "Pasta", "Coconut"];
