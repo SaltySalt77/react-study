@@ -1,3 +1,7 @@
+import Food from "./Food";
+import Image from "next/image";
+import foodImg from "/public/food0.png";
+
 const List = () => {
   let items = ["Tomatoes", "Pasta", "Coconut"];
   return (
@@ -5,9 +9,13 @@ const List = () => {
       <h3 className="title">상품목록</h3>
       {items.map((item, i) => {
         return (
-          <div className="food" key={i}>
-            <h4>{item} $40</h4>
-          </div>
+          <Food
+            key={i}
+            className="food"
+            item={item}
+            image={`/food${i}.png`}
+            alt={item}
+          />
         );
       })}
     </div>
